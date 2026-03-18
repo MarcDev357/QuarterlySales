@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Microsoft.AspNetCore.Identity.IdentityUser>
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<IdentityUser> UserManager
+
+@{
+    ViewData["Title"] = "Manage Users";
+}
+
+<h2>Manage Users</h2>
+
+<p>
+    <a asp-area="Identity" asp-page="/Account/Register">Add a User</a>
+</p>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Roles</th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            var roles = await UserManager.GetRolesAsync(user);
+
+            <tr>
+                <td>@user.UserName</td>
+                <td>@string.Join(", ", roles)</td>
+                <td>
+                    <a asp-controller="User"
+                       asp-action="DeleteUser"
+                       asp-route-id="@user.Id"
+                       class="btn btn-primary">
+                        Delete User
+                    </a>
+                </td>
+                <td>
+                    <a asp-controller="User"
+                       asp-action="AddToAdmin"
+                       asp-route-id="@user.Id"
+                       class="btn btn-primary">
+                        Add To Admin
+                    </a>
+                </td>
+                <td>
+                    <a asp-controller="User"
+                       asp-action="RemoveFromAdmin"
+                       asp-route-id="@user.Id"
+                       class="btn btn-primary">
+                        Remove From Admin
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

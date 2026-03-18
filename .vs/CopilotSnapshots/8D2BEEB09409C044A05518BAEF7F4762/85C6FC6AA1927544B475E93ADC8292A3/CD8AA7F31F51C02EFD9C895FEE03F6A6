@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Manage Users";
+}
+
+<h2>Manage Users</h2>
+
+<p>
+    <a href="/Identity/Account/Register" class="btn btn-primary">
+        Add a User
+    </a>
+</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Roles</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>admin</td>
+            <td>Admin</td>
+            <td>
+                <button class="btn btn-danger">Delete User</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

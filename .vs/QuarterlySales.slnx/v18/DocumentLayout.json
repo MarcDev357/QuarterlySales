@@ -1,0 +1,249 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "Z:\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{76FAC329-6620-59A2-29FB-83F8D139C23A}|QuarterlySales.csproj|z:\\ciat asp.net mvc\\asp.net pt 2\\week 4\\assignment\\quarterlysales\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{76FAC329-6620-59A2-29FB-83F8D139C23A}|QuarterlySales.csproj|solutionrelative:views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|\\\\Mac\\Shared\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\ScaffoldingReadMe.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|\\\\mac\\shared\\ciat asp.net mvc\\asp.net pt 2\\week 4\\assignment\\quarterlysales\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|\\\\mac\\shared\\ciat asp.net mvc\\asp.net pt 2\\week 4\\assignment\\quarterlysales\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|\\\\mac\\shared\\ciat asp.net mvc\\asp.net pt 2\\week 4\\assignment\\quarterlysales\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|\\\\mac\\shared\\ciat asp.net mvc\\asp.net pt 2\\week 4\\assignment\\quarterlysales\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|\\\\mac\\shared\\ciat asp.net mvc\\asp.net pt 2\\week 4\\assignment\\quarterlysales\\controllers\\salescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|\\\\mac\\shared\\ciat asp.net mvc\\asp.net pt 2\\week 4\\assignment\\quarterlysales\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|\\\\mac\\shared\\ciat asp.net mvc\\asp.net pt 2\\week 4\\assignment\\quarterlysales\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|\\\\mac\\shared\\ciat asp.net mvc\\asp.net pt 2\\week 4\\assignment\\quarterlysales\\views\\home\\_salessummary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|\\\\mac\\shared\\ciat asp.net mvc\\asp.net pt 2\\week 4\\assignment\\quarterlysales\\models\\viewmodels\\employeeselectlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|\\\\mac\\shared\\ciat asp.net mvc\\asp.net pt 2\\week 4\\assignment\\quarterlysales\\models\\viewmodels\\saleslistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|\\\\mac\\shared\\ciat asp.net mvc\\asp.net pt 2\\week 4\\assignment\\quarterlysales\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|\\\\mac\\shared\\ciat asp.net mvc\\asp.net pt 2\\week 4\\assignment\\quarterlysales\\data\\salesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|\\\\mac\\shared\\ciat asp.net mvc\\asp.net pt 2\\week 4\\assignment\\quarterlysales\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "Z:\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\Views\\User\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\Index.cshtml",
+              "ToolTip": "Z:\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\Views\\User\\Index.cshtml*",
+              "RelativeToolTip": "Views\\User\\Index.cshtml*",
+              "ViewState": "AgIAACEAAAAAAAAAAAAqwD8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-11T00:46:46.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "\\\\Mac\\Shared\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\ScaffoldingReadMe.txt",
+              "ToolTip": "\\\\Mac\\Shared\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAACAmZmZmZkOwAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-03-07T03:49:49.822Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "Z:\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "Z:\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAgwIgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-07T03:42:34.856Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "Z:\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "Z:\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAN8AAAAAAAAAAAAgwAEBAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-07T03:39:18.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "Z:\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "Z:\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAcwDAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-07T03:38:35.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "Z:\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmployeeController.cs",
+              "ToolTip": "Z:\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAgwEcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-07T03:35:19.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SalesController.cs",
+              "DocumentMoniker": "Z:\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\Controllers\\SalesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SalesController.cs",
+              "ToolTip": "Z:\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\Controllers\\SalesController.cs",
+              "RelativeToolTip": "Controllers\\SalesController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAwwEAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-07T03:28:01.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "Z:\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\Data\\SeedData.cs",
+              "RelativeDocumentMoniker": "Data\\SeedData.cs",
+              "ToolTip": "Z:\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\Data\\SeedData.cs",
+              "RelativeToolTip": "Data\\SeedData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-07T03:27:03.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "Z:\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "Z:\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAB4AAAAANzMzMzMBwAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-07T03:19:20.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_SalesSummary.cshtml",
+              "DocumentMoniker": "Z:\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\Views\\Home\\_SalesSummary.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\_SalesSummary.cshtml",
+              "ToolTip": "Z:\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\Views\\Home\\_SalesSummary.cshtml",
+              "RelativeToolTip": "Views\\Home\\_SalesSummary.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-01T17:38:22.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EmployeeSelectListViewModel.cs",
+              "DocumentMoniker": "Z:\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\Models\\ViewModels\\EmployeeSelectListViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\EmployeeSelectListViewModel.cs",
+              "ToolTip": "Z:\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\Models\\ViewModels\\EmployeeSelectListViewModel.cs",
+              "RelativeToolTip": "Models\\ViewModels\\EmployeeSelectListViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T15:44:53.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SalesListViewModel.cs",
+              "DocumentMoniker": "Z:\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\Models\\ViewModels\\SalesListViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\SalesListViewModel.cs",
+              "ToolTip": "Z:\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\Models\\ViewModels\\SalesListViewModel.cs",
+              "RelativeToolTip": "Models\\ViewModels\\SalesListViewModel.cs",
+              "ViewState": "AgIAAAQAAADgMjMzMzM3wBoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T15:44:31.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "Z:\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "Z:\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAQwKsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T16:02:06.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SalesRepository.cs",
+              "DocumentMoniker": "Z:\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\Data\\SalesRepository.cs",
+              "RelativeDocumentMoniker": "Data\\SalesRepository.cs",
+              "ToolTip": "Z:\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\Data\\SalesRepository.cs",
+              "RelativeToolTip": "Data\\SalesRepository.cs",
+              "ViewState": "AgIAAAAAAAAANDMzMzPrvzsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T15:46:50.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "Z:\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "Z:\\CIAT ASP.NET MVC\\ASP.NET Pt 2\\Week 4\\Assignment\\QuarterlySales\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAwwC0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T16:06:34.23Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

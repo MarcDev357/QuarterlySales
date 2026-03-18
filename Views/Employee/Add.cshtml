@@ -1,0 +1,62 @@
+﻿@model QuarterlySales.Models.Employee
+
+@{
+    ViewData["Title"] = "Add New Employee";
+}
+
+<div class="container">
+    <h2 class="mb-4">Add New Employee</h2>
+
+    <div class="row">
+        <div class="col-md-6">
+            <form asp-action="Add" method="post">
+                @Html.AntiForgeryToken()
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group">
+                    <label asp-for="Firstname" class="control-label"></label>
+                    <input asp-for="Firstname" class="form-control" />
+                    <span asp-validation-for="Firstname" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Lastname" class="control-label"></label>
+                    <input asp-for="Lastname" class="form-control" />
+                    <span asp-validation-for="Lastname" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="DOB" class="control-label"></label>
+                    <input asp-for="DOB" class="form-control" type="date" />
+                    <span asp-validation-for="DOB" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="DateOfHire" class="control-label"></label>
+                    <input asp-for="DateOfHire" class="form-control" type="date" />
+                    <span asp-validation-for="DateOfHire" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="ManagerId" class="control-label"></label>
+                    <select asp-for="ManagerId" asp-items="@ViewBag.Managers" class="form-control">
+                        <option value="">Select a manager</option>
+                    </select>
+                    <span asp-validation-for="ManagerId" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Add Employee</button>
+                    <a asp-action="Index" asp-controller="Home" class="btn btn-secondary">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

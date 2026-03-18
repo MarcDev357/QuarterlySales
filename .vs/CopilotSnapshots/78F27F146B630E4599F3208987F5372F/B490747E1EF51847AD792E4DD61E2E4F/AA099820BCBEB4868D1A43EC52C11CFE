@@ -1,0 +1,47 @@
+﻿@page
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<IdentityUser> UserManager
+@model IEnumerable<IdentityUser>
+@{
+    ViewData["Title"] = "Manage Users";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    This page was restored to remove layout markup and RenderBody usage.
+    Replace the contents below with your original scaffolded user list or restore from source control.
+</p>
+
+<!-- Example placeholder table (replace with your model-driven markup) -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Roles</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Example static row; replace with @foreach(Model) when you restore the model -->
+        @foreach (var user in Model)
+        {
+            var roles = await UserManager.GetRolesAsync(user);
+            <tr>
+                <td>@user.UserName</td>
+                <td>@user.Email</td>
+                <td>
+                    @foreach (var role in roles)
+                    {
+                        @role<br />
+                    }
+                </td>
+                <td>
+                    <a class="btn btn-sm btn-primary" asp-controller="User" asp-action="Edit" asp-route-id="@user.Id">Edit</a>
+                    <a class="btn btn-sm btn-danger" asp-controller="User" asp-action="Delete" asp-route-id="@user.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

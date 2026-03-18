@@ -1,0 +1,59 @@
+﻿@page
+@model QuarterlySales.Pages.Admin.ManageUsersModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Manage Users";
+}
+
+<h1>Manage Users</h1>
+
+<h3>Create User</h3>
+<form method="post" asp-page-handler="Create">
+    <div class="mb-3">
+        <label class="form-label">Username (email recommended)</label>
+        <input class="form-control" asp-for="NewUserName" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input class="form-control" asp-for="NewUserPassword" type="password" />
+        <div class="form-text">Password must be at least 6 characters and contain an uppercase letter.</div>
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
+
+<hr />
+
+<h3>Existing Users</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Is Admin</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var user in Model.Users)
+    {
+        var isAdmin = (await Model.PageContext.HttpContext.RequestServices
+                        .GetRequiredService<UserManager<IdentityUser>>()
+                        .IsInRoleAsync(user, "Admin"));
+        <tr>
+            <td>@user.UserName</td>
+            <td>@(isAdmin ? "Yes" : "No")</td>
+            <td>
+                <form method="post" asp-page-handler="ToggleAdmin" class="d-inline">
+                    <input type="hidden" name="id" value="@user.Id" />
+                    <button class="btn btn-sm btn-secondary" type="submit">@((isAdmin) ? "Remove Admin" : "Make Admin")</button>
+                </form>
+
+                <form method="post" asp-page-handler="Delete" class="d-inline ms-1" onsubmit="return confirm('Delete user?');">
+                    <input type="hidden" name="id" value="@user.Id" />
+                    <button class="btn btn-sm btn-danger" type="submit">Delete</button>
+                </form>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

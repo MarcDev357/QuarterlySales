@@ -1,0 +1,258 @@
+﻿@model QuarterlySales.Models.ViewModels.SalesListViewModel
+
+@{
+    ViewData["Title"] = "Quarterly Sales";
+
+    string GetSortUrl(string field)
+    {
+        var direction = "asc";
+        if (field == ViewBag.SortField)
+        {
+            direction = ViewBag.SortDirection == "asc" ? "desc" : "asc";
+        }
+
+        return $"/?employeeId={ViewBag.EmployeeId}&sortField={field}&sortDirection={direction}&page={ViewBag.Page}&pageSize={ViewBag.PageSize}";
+    }
+
+    string GetSortIcon(string field)
+    {
+        if (field == ViewBag.SortField)
+        {
+            return ViewBag.SortDirection == "asc" ? "▲" : "▼";
+        }
+        return "";
+    }
+
+    string GetPageUrl(int page)
+    {
+        return $"/?employeeId={ViewBag.EmployeeId}&sortField={ViewBag.SortField}&sortDirection={ViewBag.SortDirection}&page={page}&pageSize={ViewBag.PageSize}";
+    }
+}
+
+<div class="container">
+    <h1 class="mb-4">Quarterly Sales Dashboard</h1>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show">
+            @TempData["ErrorMessage"]
+        </div>
+    }
+
+    <!-- Filter Panel -->
+    <div class="row mb-3">
+        <div class="col-md-6">
+
+            <form method="get" asp-action="Index" id="filterForm" class="form-inline">
+
+                <input type="hidden" name="sortField" value="@ViewBag.SortField" />
+                <input type="hidden" name="sortDirection" value="@ViewBag.SortDirection" />
+                <input type="hidden" name="page" value="1" />
+
+                <div class="form-group mr-3">
+                    <label class="mr-2">Filter by Employee:</label>
+
+                    <select name="employeeId"
+                            class="form-control"
+                            onchange="document.getElementById('filterForm').submit();">
+
+                        <option value="">All Employees</option>
+
+                        @foreach (var employee in Model.Employees)
+                        {
+                            <option value="@employee.EmployeeId"
+                                    selected="@(Model.SelectedEmployeeId == employee.EmployeeId)">
+                                @employee.Firstname @employee.Lastname
+                            </option>
+                        }
+
+                    </select>
+                </div>
+
+            <div class="col-md-6">
+                <div class="form-group mr-3">
+                    <label class="mr-2">Show:</label>
+
+                    <select name="pageSize"
+                            class="form-control"
+                            onchange="document.getElementById('filterForm').submit();">
+
+                        <option value="4" selected="@(Model.PageSize == 4)">4 per page</option>
+                        <option value="8" selected="@(Model.PageSize == 8)">8 per page</option>
+
+                    </select>
+                </div>
+            </div>
+
+                @if (Model.SelectedEmployeeId.HasValue)
+                {
+                    <a href="@Url.Action("Index", new { pageSize = Model.PageSize })"
+                       class="btn btn-outline-secondary btn-sm">
+                        Clear Filter
+                    </a>
+                }
+
+            </form>
+
+        </div>
+
+        <!-- Buttons Section -->
+        <div class="col-md-4 text-right">
+
+            @if (User.Identity.IsAuthenticated)
+            {
+                <a asp-controller="Sales"
+                   asp-action="Add"
+                   class="btn btn-success">
+                    Add Sales
+                </a>
+            }
+
+            @if (User.IsInRole("Admin"))
+            {
+                <a asp-controller="Employee"
+                   asp-action="Add"
+                   class="btn btn-primary">
+                    Add Employee
+                </a>
+            }
+
+        </div>
+    </div>
+
+    <!-- Sales Summary -->
+    @await Html.PartialAsync("_SalesSummary", Model)
+
+    <!-- Sales Table -->
+    <div class="card">
+
+        <div class="card-header bg-secondary text-white d-flex justify-content-between">
+            <h5>Sales Details</h5>
+            <span class="badge badge-light">@Model.TotalRecords total records</span>
+        </div>
+
+        <div class="card-body">
+
+            <table class="table table-striped table-bordered">
+
+                <thead class="thead-dark">
+                    <tr>
+                        <th>
+                            <a href="@GetSortUrl("employee")" class="text-white">
+                                Employee @GetSortIcon("employee")
+                            </a>
+                        </th>
+
+                        <th>
+                            <a href="@GetSortUrl("year")" class="text-white">
+                                Year @GetSortIcon("year")
+                            </a>
+                        </th>
+
+                        <th>
+                            <a href="@GetSortUrl("quarter")" class="text-white">
+                                Quarter @GetSortIcon("quarter")
+                            </a>
+                        </th>
+
+                        <th class="text-right">
+                            <a href="@GetSortUrl("amount")" class="text-white">
+                                Amount @GetSortIcon("amount")
+                            </a>
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    @foreach (var sale in Model.Sales)
+                    {
+                        <tr>
+                            <td>
+                                @(sale.Employee?.Firstname ?? "Unknown")
+                                @(sale.Employee?.Lastname ?? "")
+                            </td>
+
+                            <td>@sale.Year</td>
+
+                            <td>@sale.Quarter</td>
+
+                            <td class="text-right">
+                                @sale.Amount.ToString("C")
+                            </td>
+                        </tr>
+                    }
+
+                    @if (!Model.Sales.Any())
+                    {
+                        <tr>
+                            <td colspan="4" class="text-center text-muted">
+                                No sales data available
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+
+                <tfoot>
+                    <tr class="font-weight-bold">
+                        <td colspan="3" class="text-right">Page Total:</td>
+                        <td class="text-right">
+                            @Model.Sales.Sum(s => s.Amount).ToString("C")
+                        </td>
+                    </tr>
+                </tfoot>
+
+            </table>
+
+            <!-- Paging -->
+            @if (Model.TotalPages > 1)
+            {
+                <nav>
+                    <ul class="pagination">
+
+                        @if (Model.CurrentPage > 1)
+                        {
+                            <li class="page-item">
+                                <a class="page-link"
+                                   href="@GetPageUrl(Model.CurrentPage - 1)">
+                                    Previous
+                                </a>
+                            </li>
+                        }
+
+                        @for (int i = 1; i <= Model.TotalPages; i++)
+                        {
+                            <li class="page-item @(i == Model.CurrentPage ? "active" : "")">
+                                <a class="page-link"
+                                   href="@GetPageUrl(i)">
+                                    @i
+                                </a>
+                            </li>
+                        }
+
+                        @if (Model.CurrentPage < Model.TotalPages)
+                        {
+                            <li class="page-item">
+                                <a class="page-link"
+                                   href="@GetPageUrl(Model.CurrentPage + 1)">
+                                    Next
+                                </a>
+                            </li>
+                        }
+
+                    </ul>
+                </nav>
+            }
+
+        </div>
+
+    </div>
+</div>
